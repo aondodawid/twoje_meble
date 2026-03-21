@@ -5,6 +5,7 @@ module.exports = {
   css: {
     extract: false,
   },
+  productionSourceMap: true,
   devServer: {
     client: false,
     hot: false,

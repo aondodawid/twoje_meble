@@ -12,7 +12,8 @@ export default defineConfig({
     screenshot: "only-on-failure",
   },
   webServer: {
-    command: "npm run build && npx http-server dist -a 127.0.0.1 -p 4173 -c-1",
+    command:
+      "npm run build && HOST=127.0.0.1 PORT=4173 node scripts/serve-dist.js",
     url: "http://127.0.0.1:4173",
     reuseExistingServer: !process.env.CI,
     timeout: 180000,

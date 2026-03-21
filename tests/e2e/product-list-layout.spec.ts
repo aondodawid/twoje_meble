@@ -10,7 +10,7 @@ test("renders 16 products and adapts across breakpoints", async ({ page }) => {
   await page.goto("/");
 
   await expect(
-    page.getByRole("heading", { name: "Produkty gotowe do porównania" }),
+    page.getByRole("heading", { name: "Kolekcja do salonu i jadalni" }),
   ).toBeVisible();
   await expect(page.locator(".product-card__trigger")).toHaveCount(16);
 
