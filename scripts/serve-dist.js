@@ -5,6 +5,7 @@ const path = require("path");
 const host = process.env.HOST || "127.0.0.1";
 const port = Number(process.env.PORT || 4173);
 const rootDir = path.resolve(__dirname, "..", "dist");
+const pidFilePath = path.resolve(__dirname, "..", ".serve-dist.pid");
 
 const contentTypes = {
   ".css": "text/css; charset=utf-8",
@@ -79,6 +80,30 @@ const server = http.createServer((request, response) => {
   });
 });
 
+function cleanupPidFile() {
+  if (!fs.existsSync(pidFilePath)) {
+    return;
+  }
+
+  const storedPid = Number(fs.readFileSync(pidFilePath, "utf8"));
+
+  if (storedPid === process.pid) {
+    fs.unlinkSync(pidFilePath);
+  }
+}
+
+function shutdown(exitCode) {
+  server.close(() => {
+    cleanupPidFile();
+    process.exit(exitCode);
+  });
+}
+
+process.on("SIGINT", () => shutdown(0));
+process.on("SIGTERM", () => shutdown(0));
+process.on("exit", cleanupPidFile);
+
 server.listen(port, host, () => {
+  fs.writeFileSync(pidFilePath, String(process.pid));
   console.log(`Available on: http://${host}:${port}`);
 });

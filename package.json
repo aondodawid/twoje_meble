@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "npm run build && HOST=127.0.0.1 PORT=8081 node scripts/serve-dist.js",
+    "serve": "node scripts/run-serve.js",
     "serve:dev": "vue-cli-service serve",
     "serve:prod": "npm run build && node scripts/serve-dist.js",
     "build": "vue-cli-service build",
