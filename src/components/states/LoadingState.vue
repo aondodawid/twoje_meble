@@ -8,7 +8,7 @@
     ></div>
     <div>
       <p class="text-lg font-bold">Ładowanie kolekcji</p>
-      <p class="mt-2 text-sm text-bark/70">
+      <p class="mt-2 text-sm text-bark/85">
         Za chwilę pokażemy dostępne produkty.
       </p>
     </div>

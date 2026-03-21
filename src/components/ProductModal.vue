@@ -53,7 +53,7 @@
         <div class="space-y-6">
           <header class="space-y-3 pr-12">
             <p
-              class="text-sm font-semibold uppercase tracking-[0.28em] text-clay"
+              class="text-sm font-semibold uppercase tracking-[0.28em] text-bark/85"
             >
               Szczegóły produktu
             </p>
@@ -64,7 +64,7 @@
               {{ product.name }}
             </h2>
             <p class="text-2xl font-black text-clay">{{ product.price }}</p>
-            <p class="max-w-2xl text-base leading-7 text-bark/75">
+            <p class="max-w-2xl text-base leading-7 text-bark/90">
               Zobacz pełną galerię zdjęć, sprawdź kod produktu i zaplanuj termin
               dostawy bez opuszczania katalogu.
             </p>

@@ -4,7 +4,7 @@
   >
     <div class="space-y-2">
       <p class="text-lg font-bold">Nie udało się wczytać oferty</p>
-      <p class="text-sm leading-6 text-bark/70">
+      <p class="text-sm leading-6 text-bark/85">
         Sprawdź połączenie lub spróbuj ponownie, aby załadować produkty jeszcze
         raz.
       </p>

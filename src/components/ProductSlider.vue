@@ -19,7 +19,7 @@
       >
         Poprzednie
       </button>
-      <p class="text-sm font-semibold text-bark/70">
+      <p class="text-sm font-semibold text-bark/85">
         Slajd {{ activeIndex + 1 }} z {{ images.length }}
       </p>
       <button

@@ -1,21 +1,20 @@
 <template>
   <article
-    :id="triggerId"
-    ref="trigger"
-    class="panel-surface product-card__trigger flex h-full cursor-pointer flex-col overflow-hidden text-left"
-    role="button"
-    tabindex="0"
-    :aria-label="`Pokaż szczegóły produktu ${product.name}`"
-    aria-haspopup="dialog"
-    @click="emitOpen"
-    @keydown.enter.prevent="emitOpen"
-    @keydown.space.prevent="emitOpen"
+    class="panel-surface relative flex h-full cursor-pointer flex-col overflow-hidden text-left focus-within:ring-4 focus-within:ring-clay/55 focus-within:ring-offset-4 focus-within:ring-offset-fog"
+    @mouseenter="setHovered(true)"
+    @mouseleave="setHovered(false)"
   >
-    <div
-      class="relative aspect-[4/3] overflow-hidden bg-sand"
-      @mouseenter="setHovered(true)"
-      @mouseleave="setHovered(false)"
-    >
+    <button
+      :id="triggerId"
+      ref="trigger"
+      type="button"
+      class="product-card__trigger absolute inset-0 z-10 rounded-[2rem] bg-transparent focus-visible:outline-none"
+      :aria-label="`Pokaż szczegóły produktu ${product.name}`"
+      aria-haspopup="dialog"
+      @click="emitOpen"
+    ></button>
+
+    <div class="relative aspect-[4/3] overflow-hidden bg-sand">
       <img
         class="h-full w-full object-cover transition duration-300 ease-out"
         :src="displayImage.src"
@@ -27,14 +26,18 @@
 
     <div class="flex flex-1 flex-col gap-4 p-5">
       <div class="space-y-2">
-        <h2 class="text-xl font-bold leading-tight">{{ product.name }}</h2>
-        <p class="text-sm uppercase tracking-[0.25em] text-bark/55">
+        <h2 class="text-xl font-bold leading-tight text-bark">
+          {{ product.name }}
+        </h2>
+        <p class="text-sm uppercase tracking-[0.25em] text-bark/80">
           {{ product.sku }}
         </p>
-        <p class="text-2xl font-black text-clay">{{ product.price }}</p>
+        <p class="text-2xl font-black text-bark">{{ product.price }}</p>
       </div>
 
-      <p class="mt-auto text-sm text-bark/70">{{ product.leadTime }}</p>
+      <p class="mt-auto text-sm font-medium text-bark/90">
+        {{ product.leadTime }}
+      </p>
     </div>
   </article>
 </template>
