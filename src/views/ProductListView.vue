@@ -1,26 +1,5 @@
 <template>
   <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-    <div
-      class="mb-8 rounded-[1.75rem] border border-bark/10 bg-white px-5 py-5 shadow-panel sm:px-6"
-    >
-      <div
-        class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between"
-      >
-        <div>
-          <p
-            class="text-sm font-semibold uppercase tracking-[0.28em] text-bark"
-          >
-            Katalog
-          </p>
-          <h2
-            class="mt-2 text-3xl font-black tracking-tight text-bark sm:text-4xl"
-          >
-            Produkty gotowe do porównania
-          </h2>
-        </div>
-      </div>
-    </div>
-
     <LoadingState v-if="status === 'loading'" />
     <ErrorState v-else-if="status === 'error'" @retry="loadCatalog" />
     <ProductGrid
