@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Jadalnia 2</title>
+  <desc id="desc">Ilustracja bufetu i stołu w ciepłym wnętrzu.</desc>
+  <rect width="1200" height="900" fill="#f2e9dc"/>
+  <rect x="120" y="180" width="300" height="420" rx="28" fill="#8f9f85"/>
+  <rect x="500" y="320" width="520" height="90" rx="26" fill="#6d4e3f"/>
+  <rect x="560" y="410" width="48" height="170" rx="18" fill="#6d4e3f"/>
+  <rect x="900" y="410" width="48" height="170" rx="18" fill="#6d4e3f"/>
+  <circle cx="960" cy="200" r="70" fill="#c86f3d" opacity="0.7"/>
+  <text x="600" y="790" text-anchor="middle" font-size="64" font-family="Trebuchet MS, sans-serif" fill="#3c2d27">Bufet i stół</text>
+</svg>

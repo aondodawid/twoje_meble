@@ -1,0 +1,36 @@
+# Node / Vue build artifacts
+node_modules/
+dist/
+coverage/
+.cache/
+
+# Test outputs
+playwright-report/
+test-results/
+.nyc_output/
+.lighthouseci/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Speckit / Speclit artifacts
+.specify/
+specs/
+.github/prompts/speckit.*.prompt.md
+.github/agents/speckit.*.agent.md
+.github/agents/copilot-instructions.md
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

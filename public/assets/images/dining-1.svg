@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Jadalnia 1</title>
+  <desc id="desc">Ilustracja stołu z czterema krzesłami.</desc>
+  <rect width="1200" height="900" fill="#f5eee3"/>
+  <rect x="250" y="240" width="700" height="120" rx="28" fill="#6d4e3f"/>
+  <rect x="310" y="360" width="90" height="270" rx="20" fill="#dcb28c"/>
+  <rect x="800" y="360" width="90" height="270" rx="20" fill="#dcb28c"/>
+  <rect x="470" y="360" width="90" height="270" rx="20" fill="#dcb28c"/>
+  <rect x="640" y="360" width="90" height="270" rx="20" fill="#dcb28c"/>
+  <text x="600" y="790" text-anchor="middle" font-size="64" font-family="Trebuchet MS, sans-serif" fill="#3c2d27">Jadalnia</text>
+</svg>

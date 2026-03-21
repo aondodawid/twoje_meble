@@ -1,0 +1,466 @@
+[
+  {
+    "id": "sofa-modena",
+    "name": "Sofa Modena",
+    "price": "3 499 zł",
+    "sku": "TM-SOF-001",
+    "leadTime": "Dostawa w 5 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/living-1.svg",
+      "alt": "Sofa Modena w jasnym salonie"
+    },
+    "hoverImage": {
+      "src": "/assets/images/living-2.svg",
+      "alt": "Sofa Modena z widocznym bokiem i detalem tapicerki"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/living-1.svg",
+        "alt": "Sofa Modena w aranżacji dziennej"
+      },
+      {
+        "src": "/assets/images/living-2.svg",
+        "alt": "Sofa Modena w ujęciu z lewej strony"
+      },
+      {
+        "src": "/assets/images/living-3.svg",
+        "alt": "Sofa Modena z lampą i stolikiem pomocniczym"
+      }
+    ]
+  },
+  {
+    "id": "naroznik-sora",
+    "name": "Narożnik Sora",
+    "price": "5 290 zł",
+    "sku": "TM-SOF-002",
+    "leadTime": "Dostawa w 7 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/living-2.svg",
+      "alt": "Narożnik Sora w ciepłym wnętrzu"
+    },
+    "hoverImage": {
+      "src": "/assets/images/living-3.svg",
+      "alt": "Narożnik Sora pokazany z szerszej perspektywy"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/living-2.svg",
+        "alt": "Narożnik Sora w układzie otwartym"
+      },
+      {
+        "src": "/assets/images/living-3.svg",
+        "alt": "Narożnik Sora z dekoracyjną lampą"
+      },
+      {
+        "src": "/assets/images/living-1.svg",
+        "alt": "Narożnik Sora z widokiem na siedzisko"
+      }
+    ]
+  },
+  {
+    "id": "fotel-lino",
+    "name": "Fotel Lino",
+    "price": "1 249 zł",
+    "sku": "TM-CHA-001",
+    "leadTime": "Wysyłka w 48 godzin",
+    "primaryImage": {
+      "src": "/assets/images/living-3.svg",
+      "alt": "Fotel Lino przy stoliku bocznym"
+    },
+    "hoverImage": {
+      "src": "/assets/images/living-1.svg",
+      "alt": "Fotel Lino w jasnej aranżacji"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/living-3.svg",
+        "alt": "Fotel Lino w widoku frontowym"
+      },
+      {
+        "src": "/assets/images/living-1.svg",
+        "alt": "Fotel Lino obok szerokiej sofy"
+      },
+      {
+        "src": "/assets/images/living-2.svg",
+        "alt": "Fotel Lino na tle pionowego panelu"
+      }
+    ]
+  },
+  {
+    "id": "lawa-riva",
+    "name": "Ława Riva",
+    "price": "899 zł",
+    "sku": "TM-TAB-001",
+    "leadTime": "Dostawa w 4 dni robocze",
+    "primaryImage": {
+      "src": "/assets/images/dining-3.svg",
+      "alt": "Ława Riva w aranżacji przy witrynie"
+    },
+    "hoverImage": {
+      "src": "/assets/images/dining-2.svg",
+      "alt": "Ława Riva w zestawie z bufetem"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Ława Riva w widoku z przodu"
+      },
+      {
+        "src": "/assets/images/dining-2.svg",
+        "alt": "Ława Riva na tle ciepłej jadalni"
+      },
+      {
+        "src": "/assets/images/living-1.svg",
+        "alt": "Ława Riva obok sofy w salonie"
+      }
+    ]
+  },
+  {
+    "id": "komoda-bergen",
+    "name": "Komoda Bergen",
+    "price": "2 180 zł",
+    "sku": "TM-CAB-001",
+    "leadTime": "Dostawa w 6 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/dining-2.svg",
+      "alt": "Komoda Bergen w strefie jadalni"
+    },
+    "hoverImage": {
+      "src": "/assets/images/dining-3.svg",
+      "alt": "Komoda Bergen z widocznym frontem i uchwytami"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/dining-2.svg",
+        "alt": "Komoda Bergen w widoku frontalnym"
+      },
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Komoda Bergen obok ławy"
+      },
+      {
+        "src": "/assets/images/dining-1.svg",
+        "alt": "Komoda Bergen w zestawieniu ze stołem"
+      }
+    ]
+  },
+  {
+    "id": "witryna-lumo",
+    "name": "Witryna Lumo",
+    "price": "2 760 zł",
+    "sku": "TM-CAB-002",
+    "leadTime": "Dostawa w 8 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/dining-3.svg",
+      "alt": "Witryna Lumo z przeszkleniami"
+    },
+    "hoverImage": {
+      "src": "/assets/images/dining-1.svg",
+      "alt": "Witryna Lumo obok stołu i krzeseł"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Witryna Lumo w ujęciu z przodu"
+      },
+      {
+        "src": "/assets/images/dining-1.svg",
+        "alt": "Witryna Lumo w pełnej aranżacji jadalni"
+      },
+      {
+        "src": "/assets/images/dining-2.svg",
+        "alt": "Witryna Lumo z detalem bryły"
+      }
+    ]
+  },
+  {
+    "id": "stol-alto",
+    "name": "Stół Alto",
+    "price": "1 990 zł",
+    "sku": "TM-TAB-002",
+    "leadTime": "Dostawa w 5 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/dining-1.svg",
+      "alt": "Stół Alto z czterema krzesłami"
+    },
+    "hoverImage": {
+      "src": "/assets/images/dining-2.svg",
+      "alt": "Stół Alto na tle bufetu"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/dining-1.svg",
+        "alt": "Stół Alto w widoku centralnym"
+      },
+      {
+        "src": "/assets/images/dining-2.svg",
+        "alt": "Stół Alto w aranżacji z bufetem"
+      },
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Stół Alto z witryną w tle"
+      }
+    ]
+  },
+  {
+    "id": "krzeslo-fiore",
+    "name": "Krzesło Fiore",
+    "price": "459 zł",
+    "sku": "TM-CHA-002",
+    "leadTime": "Wysyłka w 24 godziny",
+    "primaryImage": {
+      "src": "/assets/images/dining-1.svg",
+      "alt": "Krzesło Fiore przy stole jadalnianym"
+    },
+    "hoverImage": {
+      "src": "/assets/images/dining-3.svg",
+      "alt": "Krzesło Fiore pokazane w bocznym ujęciu"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/dining-1.svg",
+        "alt": "Krzesło Fiore w aranżacji stołu"
+      },
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Krzesło Fiore na tle witryny"
+      },
+      {
+        "src": "/assets/images/dining-2.svg",
+        "alt": "Krzesło Fiore obok bufetu"
+      }
+    ]
+  },
+  {
+    "id": "szafka-sento",
+    "name": "Szafka Sento",
+    "price": "1 540 zł",
+    "sku": "TM-CAB-003",
+    "leadTime": "Dostawa w 6 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/dining-2.svg",
+      "alt": "Szafka Sento w stonowanej jadalni"
+    },
+    "hoverImage": {
+      "src": "/assets/images/living-2.svg",
+      "alt": "Szafka Sento w zestawieniu z dodatkami dekoracyjnymi"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/dining-2.svg",
+        "alt": "Szafka Sento w widoku frontowym"
+      },
+      {
+        "src": "/assets/images/living-2.svg",
+        "alt": "Szafka Sento w ocieplonej aranżacji"
+      },
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Szafka Sento obok witryny"
+      }
+    ]
+  },
+  {
+    "id": "regal-tolo",
+    "name": "Regał Tolo",
+    "price": "1 880 zł",
+    "sku": "TM-SHE-001",
+    "leadTime": "Dostawa w 7 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/living-2.svg",
+      "alt": "Regał Tolo w nowoczesnym salonie"
+    },
+    "hoverImage": {
+      "src": "/assets/images/living-1.svg",
+      "alt": "Regał Tolo z ekspozycją dekoracji"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/living-2.svg",
+        "alt": "Regał Tolo w ujęciu z przodu"
+      },
+      {
+        "src": "/assets/images/living-1.svg",
+        "alt": "Regał Tolo w strefie wypoczynkowej"
+      },
+      {
+        "src": "/assets/images/living-3.svg",
+        "alt": "Regał Tolo obok lampy podłogowej"
+      }
+    ]
+  },
+  {
+    "id": "lawa-porto",
+    "name": "Ława Porto",
+    "price": "1 020 zł",
+    "sku": "TM-TAB-003",
+    "leadTime": "Dostawa w 4 dni robocze",
+    "primaryImage": {
+      "src": "/assets/images/living-3.svg",
+      "alt": "Ława Porto w części wypoczynkowej"
+    },
+    "hoverImage": {
+      "src": "/assets/images/living-2.svg",
+      "alt": "Ława Porto przy jasnej sofie"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/living-3.svg",
+        "alt": "Ława Porto w widoku centralnym"
+      },
+      {
+        "src": "/assets/images/living-2.svg",
+        "alt": "Ława Porto z akcentem dekoracyjnym"
+      },
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Ława Porto w zestawieniu z witryną"
+      }
+    ]
+  },
+  {
+    "id": "sofa-vena",
+    "name": "Sofa Vena",
+    "price": "3 950 zł",
+    "sku": "TM-SOF-003",
+    "leadTime": "Dostawa w 5 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/living-1.svg",
+      "alt": "Sofa Vena w aranżacji wypoczynkowej"
+    },
+    "hoverImage": {
+      "src": "/assets/images/living-3.svg",
+      "alt": "Sofa Vena z dodatkowym światłem bocznym"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/living-1.svg",
+        "alt": "Sofa Vena w ujęciu na wprost"
+      },
+      {
+        "src": "/assets/images/living-3.svg",
+        "alt": "Sofa Vena w ustawieniu przy lampie"
+      },
+      {
+        "src": "/assets/images/living-2.svg",
+        "alt": "Sofa Vena z wyeksponowanym bokiem"
+      }
+    ]
+  },
+  {
+    "id": "fotel-milo",
+    "name": "Fotel Milo",
+    "price": "1 390 zł",
+    "sku": "TM-CHA-003",
+    "leadTime": "Wysyłka w 72 godziny",
+    "primaryImage": {
+      "src": "/assets/images/living-2.svg",
+      "alt": "Fotel Milo z miękkim oparciem"
+    },
+    "hoverImage": {
+      "src": "/assets/images/living-1.svg",
+      "alt": "Fotel Milo pokazany z boku"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/living-2.svg",
+        "alt": "Fotel Milo w ustawieniu frontalnym"
+      },
+      {
+        "src": "/assets/images/living-1.svg",
+        "alt": "Fotel Milo przy sofie"
+      },
+      {
+        "src": "/assets/images/living-3.svg",
+        "alt": "Fotel Milo z lampą podłogową"
+      }
+    ]
+  },
+  {
+    "id": "stol-domo",
+    "name": "Stół Domo",
+    "price": "2 240 zł",
+    "sku": "TM-TAB-004",
+    "leadTime": "Dostawa w 6 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/dining-1.svg",
+      "alt": "Stół Domo w zestawie z krzesłami"
+    },
+    "hoverImage": {
+      "src": "/assets/images/dining-2.svg",
+      "alt": "Stół Domo na tle komody"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/dining-1.svg",
+        "alt": "Stół Domo w widoku dziennym"
+      },
+      {
+        "src": "/assets/images/dining-2.svg",
+        "alt": "Stół Domo w aranżacji jadalnianej"
+      },
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Stół Domo obok witryny"
+      }
+    ]
+  },
+  {
+    "id": "komoda-runo",
+    "name": "Komoda Runo",
+    "price": "2 430 zł",
+    "sku": "TM-CAB-004",
+    "leadTime": "Dostawa w 8 dni roboczych",
+    "primaryImage": {
+      "src": "/assets/images/dining-2.svg",
+      "alt": "Komoda Runo w ciepłej aranżacji"
+    },
+    "hoverImage": {
+      "src": "/assets/images/dining-1.svg",
+      "alt": "Komoda Runo obok stołu jadalnianego"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/dining-2.svg",
+        "alt": "Komoda Runo w ujęciu z przodu"
+      },
+      {
+        "src": "/assets/images/dining-1.svg",
+        "alt": "Komoda Runo przy stole"
+      },
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Komoda Runo obok witryny"
+      }
+    ]
+  },
+  {
+    "id": "krzeslo-tika",
+    "name": "Krzesło Tika",
+    "price": "520 zł",
+    "sku": "TM-CHA-004",
+    "leadTime": "Wysyłka w 24 godziny",
+    "primaryImage": {
+      "src": "/assets/images/dining-3.svg",
+      "alt": "Krzesło Tika z miękkim siedziskiem"
+    },
+    "hoverImage": {
+      "src": "/assets/images/dining-1.svg",
+      "alt": "Krzesło Tika przy stole z drewna"
+    },
+    "galleryImages": [
+      {
+        "src": "/assets/images/dining-3.svg",
+        "alt": "Krzesło Tika w ujęciu z przodu"
+      },
+      {
+        "src": "/assets/images/dining-1.svg",
+        "alt": "Krzesło Tika w aranżacji jadalni"
+      },
+      {
+        "src": "/assets/images/dining-2.svg",
+        "alt": "Krzesło Tika z bocznym profilem"
+      }
+    ]
+  }
+]

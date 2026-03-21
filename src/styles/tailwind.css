@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color: #3c2d27;
+    background: #f8f7f4;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  a,
+  button {
+    @apply transition duration-200 ease-out;
+  }
+
+  :focus-visible {
+    outline: 3px solid #c86f3d;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .panel-surface {
+    @apply rounded-[2rem] border border-bark/10 bg-white/90 shadow-panel backdrop-blur-sm;
+  }
+
+  .action-button {
+    @apply inline-flex items-center justify-center rounded-full bg-bark px-4 py-2 text-sm font-semibold text-fog hover:bg-clay focus-visible:bg-clay disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center rounded-full border border-bark/15 bg-white px-4 py-2 text-sm font-semibold text-bark hover:border-clay hover:text-clay;
+  }
+}
