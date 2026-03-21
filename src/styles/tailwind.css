@@ -4,13 +4,21 @@
 
 @layer base {
   html {
+    min-height: 100%;
     color: #3c2d27;
     background: #f8f7f4;
     scroll-behavior: smooth;
   }
 
   body {
+    min-height: 100%;
+    margin: 0;
     font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    background: linear-gradient(180deg, #f8f7f4 0%, #efe6d9 100%);
+  }
+
+  #app {
+    min-height: 100%;
   }
 
   * {
@@ -29,8 +37,13 @@
 }
 
 @layer components {
+  .app-shell {
+    isolation: isolate;
+    min-height: 100dvh;
+  }
+
   .panel-surface {
-    @apply rounded-[2rem] border border-bark/10 bg-white/90 shadow-panel backdrop-blur-sm;
+    @apply rounded-[2rem] border border-bark/10 bg-white shadow-panel;
   }
 
   .action-button {

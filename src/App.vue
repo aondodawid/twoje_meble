@@ -1,8 +1,8 @@
 <template>
   <div
-    class="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(200,111,61,0.18),_transparent_42%),linear-gradient(180deg,_#f8f7f4_0%,_#efe6d9_100%)] text-bark"
+    class="app-shell min-h-screen min-h-[100dvh] bg-[radial-gradient(circle_at_top,_rgba(200,111,61,0.18),_transparent_42%),linear-gradient(180deg,_#f8f7f4_0%,_#efe6d9_100%)] text-bark"
   >
-    <header class="border-b border-bark/10 bg-white/80 backdrop-blur-sm">
+    <header class="border-b border-bark/10 bg-white/95">
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <p class="text-sm font-semibold uppercase tracking-[0.28em] text-clay">
           Twoje Meble
