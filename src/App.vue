@@ -21,11 +21,6 @@
               szczegóły bez opuszczania listy produktów.
             </p>
           </div>
-          <p
-            class="rounded-full bg-bark px-4 py-2 text-sm font-semibold text-fog shadow-panel"
-          >
-            16 starannie dobranych produktów
-          </p>
         </div>
       </div>
     </header>

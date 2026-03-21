@@ -11,10 +11,6 @@
           Produkty gotowe do porównania
         </h2>
       </div>
-      <p class="text-sm leading-6 text-bark/70 sm:max-w-sm sm:text-right">
-        Kliknij kartę, aby otworzyć modal ze zdjęciami, kodem produktu i
-        terminem realizacji.
-      </p>
     </div>
 
     <LoadingState v-if="status === 'loading'" />
