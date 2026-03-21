@@ -19,8 +19,9 @@
         class="h-full w-full object-cover transition duration-300 ease-out"
         :src="displayImage.src"
         :alt="displayImage.alt"
-        :loading="priorityImage ? 'eager' : 'lazy'"
-        :fetchpriority="priorityImage ? 'high' : 'auto'"
+        :loading="imageLoading"
+        :decoding="imageDecoding"
+        :fetchpriority="imageFetchPriority"
       />
     </div>
 
@@ -71,6 +72,15 @@ export default {
       }
 
       return this.product.primaryImage;
+    },
+    imageLoading() {
+      return this.priorityImage ? "eager" : "lazy";
+    },
+    imageDecoding() {
+      return this.priorityImage ? "sync" : "async";
+    },
+    imageFetchPriority() {
+      return this.priorityImage ? "high" : null;
     },
     triggerId() {
       return `product-trigger-${this.product.id}`;

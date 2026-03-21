@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serve:prod": "npm run build && node scripts/serve-dist.js",
     "build": "vue-cli-service build",
     "test:unit": "jest --runInBand",
     "test:e2e": "playwright test tests/e2e --project=chromium",

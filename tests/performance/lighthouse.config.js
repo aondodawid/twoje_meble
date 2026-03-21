@@ -1,7 +1,7 @@
 module.exports = {
   ci: {
     collect: {
-      startServerCommand: "npx http-server dist -a 127.0.0.1 -p 4173 -c-1",
+      startServerCommand: "node scripts/serve-dist.js",
       startServerReadyPattern: "Available on:",
       url: ["http://127.0.0.1:4173/"],
       numberOfRuns: 1,

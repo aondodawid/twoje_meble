@@ -5,6 +5,12 @@ module.exports = {
   css: {
     extract: false,
   },
+  devServer: {
+    client: false,
+    hot: false,
+    liveReload: false,
+    webSocketServer: false,
+  },
   configureWebpack: {
     resolve: {
       alias: {
