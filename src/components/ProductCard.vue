@@ -1,5 +1,16 @@
 <template>
-  <article class="panel-surface flex h-full flex-col overflow-hidden">
+  <article
+    :id="triggerId"
+    ref="trigger"
+    class="panel-surface product-card__trigger flex h-full cursor-pointer flex-col overflow-hidden text-left"
+    role="button"
+    tabindex="0"
+    :aria-label="`Pokaż szczegóły produktu ${product.name}`"
+    aria-haspopup="dialog"
+    @click="emitOpen"
+    @keydown.enter.prevent="emitOpen"
+    @keydown.space.prevent="emitOpen"
+  >
     <div
       class="relative aspect-[4/3] overflow-hidden bg-sand"
       @mouseenter="setHovered(true)"
@@ -12,11 +23,6 @@
         :loading="priorityImage ? 'eager' : 'lazy'"
         :fetchpriority="priorityImage ? 'high' : 'auto'"
       />
-      <span
-        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-clay"
-      >
-        Nowość
-      </span>
     </div>
 
     <div class="flex flex-1 flex-col gap-4 p-5">
@@ -28,20 +34,7 @@
         <p class="text-2xl font-black text-clay">{{ product.price }}</p>
       </div>
 
-      <div class="mt-auto flex items-center justify-between gap-4">
-        <p class="text-sm text-bark/70">Dostawa: {{ product.leadTime }}</p>
-        <button
-          :id="triggerId"
-          ref="trigger"
-          type="button"
-          class="action-button product-card__trigger"
-          :aria-label="`Pokaż szczegóły produktu ${product.name}`"
-          aria-haspopup="dialog"
-          @click="emitOpen"
-        >
-          Szczegóły
-        </button>
-      </div>
+      <p class="mt-auto text-sm text-bark/70">{{ product.leadTime }}</p>
     </div>
   </article>
 </template>

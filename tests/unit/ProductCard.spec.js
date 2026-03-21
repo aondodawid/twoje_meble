@@ -38,11 +38,11 @@ describe("ProductCard", () => {
       },
     });
 
-    await wrapper.find("button").trigger("click");
+    await wrapper.find(".product-card__trigger").trigger("click");
 
     expect(wrapper.emitted().open).toHaveLength(1);
     expect(wrapper.emitted().open[0][0]).toBe("sample");
-    expect(wrapper.emitted().open[0][1].tagName).toBe("BUTTON");
+    expect(wrapper.emitted().open[0][1].tagName).toBe("ARTICLE");
   });
 
   it("swaps image on hover when supported", async () => {
@@ -53,10 +53,10 @@ describe("ProductCard", () => {
       },
     });
 
-    await wrapper.find("div").trigger("mouseenter");
+    await wrapper.find(".relative").trigger("mouseenter");
     expect(wrapper.find("img").attributes("src")).toBe("/hover.svg");
 
-    await wrapper.find("div").trigger("mouseleave");
+    await wrapper.find(".relative").trigger("mouseleave");
     expect(wrapper.find("img").attributes("src")).toBe("/primary.svg");
   });
 });
