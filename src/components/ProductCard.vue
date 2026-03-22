@@ -18,8 +18,8 @@
       <img
         class="object-cover w-full h-full transition duration-300 ease-out"
         :src="displayImage.src"
-        :srcset="`${displayImage.src} 900w`"
-        sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 1279px) calc(50vw - 3rem), calc(25vw - 2rem)"
+        :srcset="imageSrcset"
+        sizes="(max-width: 639px) calc(100vw - 2rem), (max-width: 1279px) calc(50vw - 4.5rem), calc(25vw - 6rem)"
         :alt="displayImage.alt"
         :loading="imageLoading"
         :decoding="imageDecoding"
@@ -79,6 +79,14 @@ export default {
     },
     imageFetchPriority() {
       return this.priorityImage ? "high" : null;
+    },
+    imageSrcset() {
+      const src = this.displayImage.src;
+      if (!src.endsWith(".webp")) {
+        return undefined;
+      }
+      const src600 = src.replace(/\.webp$/, "-600w.webp");
+      return `${src600} 600w, ${src} 900w`;
     },
     triggerId() {
       return `product-trigger-${this.product.id}`;
