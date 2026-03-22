@@ -8,7 +8,7 @@
       <section
         v-if="visible && product"
         ref="dialog"
-        class="panel-surface relative max-h-[90vh] sm:max-h-[92vh] w-full max-w-5xl overflow-auto p-3 sm:p-4 md:p-6"
+        class="panel-surface relative max-h-[90vh] sm:max-h-[92vh] w-full max-w-2xl overflow-auto p-3 sm:p-4 md:p-6"
         role="dialog"
         aria-modal="true"
         :aria-labelledby="titleId"

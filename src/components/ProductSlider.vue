@@ -69,7 +69,7 @@
           @click="$emit('change', index)"
         >
           <img
-            class="h-16 sm:h-20 w-full object-cover"
+            class="h-16 sm:h-20 md:h-24 w-full object-cover"
             :src="image.src"
             :alt="image.alt"
             loading="lazy"
