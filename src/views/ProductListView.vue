@@ -90,22 +90,20 @@ export default {
       this.activeSlideIndex = 0;
       this.lastTriggerElement = triggerElement || null;
     },
-    closeProduct({ viaKeyboard } = {}) {
+    closeProduct() {
       const lastTriggerElement = this.lastTriggerElement;
       this.selectedProductId = null;
       this.activeSlideIndex = 0;
 
-      if (viaKeyboard) {
-        this.$nextTick(() => {
-          if (
-            lastTriggerElement &&
-            typeof lastTriggerElement.focus === "function" &&
-            document.body.contains(lastTriggerElement)
-          ) {
-            lastTriggerElement.focus();
-          }
-        });
-      }
+      this.$nextTick(() => {
+        if (
+          lastTriggerElement &&
+          typeof lastTriggerElement.focus === "function" &&
+          document.body.contains(lastTriggerElement)
+        ) {
+          lastTriggerElement.focus();
+        }
+      });
     },
     changeSlide(index) {
       if (!this.selectedProduct) {
