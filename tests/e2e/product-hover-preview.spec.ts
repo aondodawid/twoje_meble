@@ -6,9 +6,10 @@ test("swaps to the hover image on desktop and restores on pointer leave", async 
   await page.goto("/");
 
   const firstCardImage = page.locator("article img").first();
+  const firstCard = page.locator("article").first();
   const initialSrc = await firstCardImage.getAttribute("src");
 
-  await firstCardImage.hover();
+  await firstCard.hover();
   await expect(firstCardImage).not.toHaveAttribute("src", initialSrc || "");
 
   await page.locator("body").hover();

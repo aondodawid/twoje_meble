@@ -1,6 +1,13 @@
 export const CATALOG_URL = "/data/products.json";
 
 export function resolveCatalogUrl() {
+  if (typeof window !== "undefined") {
+    const params = new URLSearchParams(window.location.search);
+    const override = params.get("catalog");
+    if (override && /^\/data\/[\w/-]+\.json$/.test(override)) {
+      return override;
+    }
+  }
   return CATALOG_URL;
 }
 
