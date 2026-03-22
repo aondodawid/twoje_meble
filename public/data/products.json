@@ -6,24 +6,24 @@
     "sku": "TM-SOF-001",
     "leadTime": "Dostawa w 5 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/living-1.svg",
+      "src": "/assets/images/modena2.webp",
       "alt": "Sofa Modena w jasnym salonie"
     },
     "hoverImage": {
-      "src": "/assets/images/living-2.svg",
+      "src": "/assets/images/modena3.webp",
       "alt": "Sofa Modena z widocznym bokiem i detalem tapicerki"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/living-1.svg",
+        "src": "/assets/images/modena2.webp",
         "alt": "Sofa Modena w aranżacji dziennej"
       },
       {
-        "src": "/assets/images/living-2.svg",
+        "src": "/assets/images/modena3.webp",
         "alt": "Sofa Modena w ujęciu z lewej strony"
       },
       {
-        "src": "/assets/images/living-3.svg",
+        "src": "/assets/images/modena2.webp",
         "alt": "Sofa Modena z lampą i stolikiem pomocniczym"
       }
     ]
@@ -35,24 +35,24 @@
     "sku": "TM-SOF-002",
     "leadTime": "Dostawa w 7 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/living-2.svg",
+      "src": "/assets/images/sora2.webp",
       "alt": "Narożnik Sora w ciepłym wnętrzu"
     },
     "hoverImage": {
-      "src": "/assets/images/living-3.svg",
+      "src": "/assets/images/sora3.webp",
       "alt": "Narożnik Sora pokazany z szerszej perspektywy"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/living-2.svg",
+        "src": "/assets/images/sora2.webp",
         "alt": "Narożnik Sora w układzie otwartym"
       },
       {
-        "src": "/assets/images/living-3.svg",
+        "src": "/assets/images/sora3.webp",
         "alt": "Narożnik Sora z dekoracyjną lampą"
       },
       {
-        "src": "/assets/images/living-1.svg",
+        "src": "/assets/images/sora2.webp",
         "alt": "Narożnik Sora z widokiem na siedzisko"
       }
     ]
@@ -64,24 +64,24 @@
     "sku": "TM-CHA-001",
     "leadTime": "Wysyłka w 48 godzin",
     "primaryImage": {
-      "src": "/assets/images/living-3.svg",
+      "src": "/assets/images/lino1.webp",
       "alt": "Fotel Lino przy stoliku bocznym"
     },
     "hoverImage": {
-      "src": "/assets/images/living-1.svg",
+      "src": "/assets/images/lino2.webp",
       "alt": "Fotel Lino w jasnej aranżacji"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/living-3.svg",
+        "src": "/assets/images/lino1.webp",
         "alt": "Fotel Lino w widoku frontowym"
       },
       {
-        "src": "/assets/images/living-1.svg",
+        "src": "/assets/images/lino2.webp",
         "alt": "Fotel Lino obok szerokiej sofy"
       },
       {
-        "src": "/assets/images/living-2.svg",
+        "src": "/assets/images/lino2.webp",
         "alt": "Fotel Lino na tle pionowego panelu"
       }
     ]
@@ -93,24 +93,24 @@
     "sku": "TM-TAB-001",
     "leadTime": "Dostawa w 4 dni robocze",
     "primaryImage": {
-      "src": "/assets/images/dining-3.svg",
+      "src": "/assets/images/riva1.webp",
       "alt": "Ława Riva w aranżacji przy witrynie"
     },
     "hoverImage": {
-      "src": "/assets/images/dining-2.svg",
+      "src": "/assets/images/riva2.webp",
       "alt": "Ława Riva w zestawie z bufetem"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/dining-3.svg",
+        "src": "/assets/images/riva1.webp",
         "alt": "Ława Riva w widoku z przodu"
       },
       {
-        "src": "/assets/images/dining-2.svg",
+        "src": "/assets/images/riva2.webp",
         "alt": "Ława Riva na tle ciepłej jadalni"
       },
       {
-        "src": "/assets/images/living-1.svg",
+        "src": "/assets/images/riva1.webp",
         "alt": "Ława Riva obok sofy w salonie"
       }
     ]
