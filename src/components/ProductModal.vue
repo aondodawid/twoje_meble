@@ -145,8 +145,8 @@ export default {
     }
   },
   methods: {
-    emitClose() {
-      this.$emit("close");
+    emitClose(viaKeyboard = false) {
+      this.$emit("close", { viaKeyboard });
     },
     handleSlideChange(index) {
       this.$emit("change-slide", index);
@@ -167,7 +167,7 @@ export default {
     handleKeydown(event) {
       if (event.key === "Escape") {
         event.preventDefault();
-        this.emitClose();
+        this.emitClose(true);
         return;
       }
 
