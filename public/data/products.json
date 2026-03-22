@@ -122,24 +122,24 @@
     "sku": "TM-CAB-001",
     "leadTime": "Dostawa w 6 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/bergen1.webp",
+      "src": "/assets/images/products/bergen/bergen1.webp",
       "alt": "Komoda Bergen w drewnianym wybarwieniu"
     },
     "hoverImage": {
-      "src": "/assets/images/bergen2.webp",
+      "src": "/assets/images/products/bergen/bergen2.webp",
       "alt": "Komoda Bergen widok z boku"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/bergen1.webp",
+        "src": "/assets/images/products/bergen/bergen1.webp",
         "alt": "Komoda Bergen w drewnianym wybarwieniu"
       },
       {
-        "src": "/assets/images/bergen2.webp",
+        "src": "/assets/images/products/bergen/bergen2.webp",
         "alt": "Komoda Bergen widok z boku"
       },
       {
-        "src": "/assets/images/bergen3.webp",
+        "src": "/assets/images/products/bergen/bergen3.webp",
         "alt": "Komoda Bergen detale rączek"
       }
     ]
@@ -151,24 +151,24 @@
     "sku": "TM-CAB-002",
     "leadTime": "Dostawa w 8 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/lumo1.webp",
+      "src": "/assets/images/products/lumo/lumo1.webp",
       "alt": "Witryna Lumo z oświetleniem LED"
     },
     "hoverImage": {
-      "src": "/assets/images/lumo2.webp",
+      "src": "/assets/images/products/lumo/lumo2.webp",
       "alt": "Witryna Lumo widok frontalny"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/lumo1.webp",
+        "src": "/assets/images/products/lumo/lumo1.webp",
         "alt": "Witryna Lumo z oświetleniem LED"
       },
       {
-        "src": "/assets/images/lumo2.webp",
+        "src": "/assets/images/products/lumo/lumo2.webp",
         "alt": "Witryna Lumo widok frontalny"
       },
       {
-        "src": "/assets/images/lumo3.webp",
+        "src": "/assets/images/products/lumo/lumo3.webp",
         "alt": "Witryna Lumo zamknięte drzwi"
       }
     ]
@@ -180,24 +180,24 @@
     "sku": "TM-TAB-002",
     "leadTime": "Dostawa w 5 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/alto1.webp",
+      "src": "/assets/images/products/alto/alto1.webp",
       "alt": "Stół Alto w jadalni"
     },
     "hoverImage": {
-      "src": "/assets/images/alto2.webp",
+      "src": "/assets/images/products/alto/alto2.webp",
       "alt": "Stół Alto widok z góry"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/alto1.webp",
+        "src": "/assets/images/products/alto/alto1.webp",
         "alt": "Stół Alto w jadalni"
       },
       {
-        "src": "/assets/images/alto2.webp",
+        "src": "/assets/images/products/alto/alto2.webp",
         "alt": "Stół Alto widok z góry"
       },
       {
-        "src": "/assets/images/alto3.webp",
+        "src": "/assets/images/products/alto/alto3.webp",
         "alt": "Stół Alto wysunięta blacha"
       }
     ]
@@ -209,24 +209,24 @@
     "sku": "TM-CHA-002",
     "leadTime": "Wysyłka w 24 godziny",
     "primaryImage": {
-      "src": "/assets/images/fiore1.webp",
+      "src": "/assets/images/products/fiore/fiore1.webp",
       "alt": "Krzesło Fiore przy stole"
     },
     "hoverImage": {
-      "src": "/assets/images/fiore2.webp",
+      "src": "/assets/images/products/fiore/fiore2.webp",
       "alt": "Krzesło Fiore profil"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/fiore1.webp",
+        "src": "/assets/images/products/fiore/fiore1.webp",
         "alt": "Krzesło Fiore przy stole"
       },
       {
-        "src": "/assets/images/fiore2.webp",
+        "src": "/assets/images/products/fiore/fiore2.webp",
         "alt": "Krzesło Fiore profil"
       },
       {
-        "src": "/assets/images/fiore3.webp",
+        "src": "/assets/images/products/fiore/fiore3.webp",
         "alt": "Krzesło Fiore szczegół siedziska"
       }
     ]
@@ -238,24 +238,24 @@
     "sku": "TM-CAB-003",
     "leadTime": "Dostawa w 6 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/sento1.webp",
+      "src": "/assets/images/products/sento/sento1.webp",
       "alt": "Szafka Sento w salonie"
     },
     "hoverImage": {
-      "src": "/assets/images/sento2.webp",
+      "src": "/assets/images/products/sento/sento2.webp",
       "alt": "Szafka Sento zboczne półki"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/sento1.webp",
+        "src": "/assets/images/products/sento/sento1.webp",
         "alt": "Szafka Sento w salonie"
       },
       {
-        "src": "/assets/images/sento2.webp",
+        "src": "/assets/images/products/sento/sento2.webp",
         "alt": "Szafka Sento zboczne półki"
       },
       {
-        "src": "/assets/images/sento3.webp",
+        "src": "/assets/images/products/sento/sento3.webp",
         "alt": "Szafka Sento otwarte drzwi"
       }
     ]
@@ -267,24 +267,24 @@
     "sku": "TM-SHE-001",
     "leadTime": "Dostawa w 7 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/tolo1.webp",
+      "src": "/assets/images/products/tolo/tolo1.webp",
       "alt": "Regał Tolo z książkami"
     },
     "hoverImage": {
-      "src": "/assets/images/tolo2.webp",
+      "src": "/assets/images/products/tolo/tolo2.webp",
       "alt": "Regał Tolo konstrukcja drewniana"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/tolo1.webp",
+        "src": "/assets/images/products/tolo/tolo1.webp",
         "alt": "Regał Tolo z książkami"
       },
       {
-        "src": "/assets/images/tolo2.webp",
+        "src": "/assets/images/products/tolo/tolo2.webp",
         "alt": "Regał Tolo konstrukcja drewniana"
       },
       {
-        "src": "/assets/images/tolo3.webp",
+        "src": "/assets/images/products/tolo/tolo3.webp",
         "alt": "Regał Tolo aranżacja wnętrza"
       }
     ]
@@ -296,24 +296,24 @@
     "sku": "TM-TAB-003",
     "leadTime": "Dostawa w 4 dni robocze",
     "primaryImage": {
-      "src": "/assets/images/porto1.webp",
+      "src": "/assets/images/products/porto/porto1.webp",
       "alt": "Ława Porto w salonie"
     },
     "hoverImage": {
-      "src": "/assets/images/porto2.webp",
+      "src": "/assets/images/products/porto/porto2.webp",
       "alt": "Ława Porto widok z góry"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/porto1.webp",
+        "src": "/assets/images/products/porto/porto1.webp",
         "alt": "Ława Porto w salonie"
       },
       {
-        "src": "/assets/images/porto2.webp",
+        "src": "/assets/images/products/porto/porto2.webp",
         "alt": "Ława Porto widok z góry"
       },
       {
-        "src": "/assets/images/porto3.webp",
+        "src": "/assets/images/products/porto/porto3.webp",
         "alt": "Ława Porto przy sofie"
       }
     ]
@@ -325,24 +325,24 @@
     "sku": "TM-SOF-003",
     "leadTime": "Dostawa w 5 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/vena1.webp",
+      "src": "/assets/images/products/vena/vena1.webp",
       "alt": "Sofa Vena z poduszkami"
     },
     "hoverImage": {
-      "src": "/assets/images/vena2.webp",
+      "src": "/assets/images/products/vena/vena2.webp",
       "alt": "Sofa Vena szeroki kadr"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/vena1.webp",
+        "src": "/assets/images/products/vena/vena1.webp",
         "alt": "Sofa Vena z poduszkami"
       },
       {
-        "src": "/assets/images/vena2.webp",
+        "src": "/assets/images/products/vena/vena2.webp",
         "alt": "Sofa Vena szeroki kadr"
       },
       {
-        "src": "/assets/images/vena3.webp",
+        "src": "/assets/images/products/vena/vena3.webp",
         "alt": "Sofa Vena detale tkaniny"
       }
     ]
@@ -354,24 +354,24 @@
     "sku": "TM-CHA-003",
     "leadTime": "Wysyłka w 72 godziny",
     "primaryImage": {
-      "src": "/assets/images/milo1.webp",
+      "src": "/assets/images/products/milo/milo1.webp",
       "alt": "Fotel Milo w kącie pokoju"
     },
     "hoverImage": {
-      "src": "/assets/images/milo2.webp",
+      "src": "/assets/images/products/milo/milo2.webp",
       "alt": "Fotel Milo widok z boku"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/milo1.webp",
+        "src": "/assets/images/products/milo/milo1.webp",
         "alt": "Fotel Milo w kącie pokoju"
       },
       {
-        "src": "/assets/images/milo2.webp",
+        "src": "/assets/images/products/milo/milo2.webp",
         "alt": "Fotel Milo widok z boku"
       },
       {
-        "src": "/assets/images/milo3.webp",
+        "src": "/assets/images/products/milo/milo3.webp",
         "alt": "Fotel Milo struktura drewniana"
       }
     ]
@@ -383,24 +383,24 @@
     "sku": "TM-TAB-004",
     "leadTime": "Dostawa w 6 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/domo1.webp",
+      "src": "/assets/images/products/domo/domo1.webp",
       "alt": "Stół Domo minimalistyczny"
     },
     "hoverImage": {
-      "src": "/assets/images/domo2.webp",
+      "src": "/assets/images/products/domo/domo2.webp",
       "alt": "Stół Domo blat biały"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/domo1.webp",
+        "src": "/assets/images/products/domo/domo1.webp",
         "alt": "Stół Domo minimalistyczny"
       },
       {
-        "src": "/assets/images/domo2.webp",
+        "src": "/assets/images/products/domo/domo2.webp",
         "alt": "Stół Domo blat biały"
       },
       {
-        "src": "/assets/images/domo3.webp",
+        "src": "/assets/images/products/domo/domo3.webp",
         "alt": "Stół Domo nogi metalowe"
       }
     ]
@@ -412,24 +412,24 @@
     "sku": "TM-CAB-004",
     "leadTime": "Dostawa w 8 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/runo1.webp",
+      "src": "/assets/images/products/runo/runo1.webp",
       "alt": "Komoda Runo nowoczesna"
     },
     "hoverImage": {
-      "src": "/assets/images/runo2.webp",
+      "src": "/assets/images/products/runo/runo2.webp",
       "alt": "Komoda Runo uchwyty drewniane"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/runo1.webp",
+        "src": "/assets/images/products/runo/runo1.webp",
         "alt": "Komoda Runo nowoczesna"
       },
       {
-        "src": "/assets/images/runo2.webp",
+        "src": "/assets/images/products/runo/runo2.webp",
         "alt": "Komoda Runo uchwyty drewniane"
       },
       {
-        "src": "/assets/images/runo3.webp",
+        "src": "/assets/images/products/runo/runo3.webp",
         "alt": "Komoda Runo szuflady"
       }
     ]
@@ -441,24 +441,24 @@
     "sku": "TM-CHA-004",
     "leadTime": "Wysyłka w 24 godziny",
     "primaryImage": {
-      "src": "/assets/images/tika1.webp",
+      "src": "/assets/images/products/tika/tika1.webp",
       "alt": "Krzesło Tika nowoczesne"
     },
     "hoverImage": {
-      "src": "/assets/images/tika2.webp",
+      "src": "/assets/images/products/tika/tika2.webp",
       "alt": "Krzesło Tika profil"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/tika1.webp",
+        "src": "/assets/images/products/tika/tika1.webp",
         "alt": "Krzesło Tika nowoczesne"
       },
       {
-        "src": "/assets/images/tika2.webp",
+        "src": "/assets/images/products/tika/tika2.webp",
         "alt": "Krzesło Tika profil"
       },
       {
-        "src": "/assets/images/tika3.webp",
+        "src": "/assets/images/products/tika/tika3.webp",
         "alt": "Krzesło Tika detale siedziska"
       }
     ]
