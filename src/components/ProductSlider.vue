@@ -1,12 +1,15 @@
 <template>
-  <section class="space-y-4" aria-label="Galeria produktu">
+  <section
+    class="flex flex-col h-full min-h-0 gap-2 sm:gap-3"
+    aria-label="Galeria produktu"
+  >
     <div
-      class="relative overflow-hidden rounded-[1.5rem] bg-sand group cursor-grab active:cursor-grabbing"
+      class="relative overflow-hidden rounded-xl sm:rounded-[1.5rem] bg-sand group cursor-grab active:cursor-grabbing flex-1 min-h-0"
       @touchstart="handleTouchStart"
       @touchend="handleTouchEnd"
     >
       <img
-        class="w-full aspect-[4/3] max-h-[35vh] sm:max-h-[42vh] object-cover select-none"
+        class="object-cover w-full h-full select-none"
         :src="currentImage.src"
         :alt="currentImage.alt"
         loading="eager"
@@ -55,11 +58,11 @@
       </div>
     </div>
 
-    <ol class="grid grid-cols-3 gap-3 sm:grid-cols-5">
+    <ol class="grid grid-cols-3 gap-2 sm:gap-3 shrink-0">
       <li v-for="(image, index) in images" :key="`${image.src}-${index}`">
         <button
           type="button"
-          class="w-full overflow-hidden transition border-2 rounded-2xl"
+          class="w-full overflow-hidden transition border-2 rounded-xl sm:rounded-2xl"
           :class="
             index === activeIndex
               ? 'border-clay'
@@ -69,7 +72,7 @@
           @click="$emit('change', index)"
         >
           <img
-            class="object-cover w-full aspect-square"
+            class="object-cover w-full aspect-[3/2]"
             :src="image.src"
             :alt="image.alt"
             loading="lazy"

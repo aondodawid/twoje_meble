@@ -8,7 +8,7 @@
       <section
         v-if="visible && product"
         ref="dialog"
-        class="panel-surface relative max-h-[95vh] sm:max-h-[96vh] md:max-h-[97vh] w-full max-w-2xl md:max-w-3xl overflow-auto p-4 sm:p-4 md:p-6"
+        class="panel-surface relative h-[94vh] sm:h-[92vh] md:h-[90vh] w-full max-w-2xl md:max-w-3xl overflow-hidden p-4 sm:p-5 md:p-6"
         role="dialog"
         aria-modal="true"
         :aria-labelledby="titleId"
@@ -33,43 +33,56 @@
           </svg>
         </button>
 
-        <div class="space-y-5 sm:space-y-6">
-          <header class="space-y-3 sm:space-y-3">
+        <div class="flex flex-col gap-3 sm:gap-4 h-full">
+          <header class="space-y-1 sm:space-y-2 shrink-0">
             <p
-              class="text-sm font-semibold uppercase tracking-[0.28em] text-bark/85"
+              class="text-xs sm:text-sm font-semibold uppercase tracking-[0.28em] text-bark/85"
             >
               Szczegóły produktu
             </p>
             <h2
               :id="titleId"
-              class="text-2xl font-black leading-tight sm:text-3xl md:text-4xl"
+              class="text-xl sm:text-2xl md:text-3xl font-black leading-tight"
             >
               {{ product.name }}
             </h2>
-            <p class="text-xl sm:text-2xl font-black text-clay">
+            <p class="text-lg sm:text-xl md:text-2xl font-black text-clay">
               {{ product.price }}
             </p>
           </header>
 
           <ProductSlider
+            class="min-h-0 flex-1"
             :images="product.galleryImages"
             :active-index="activeSlideIndex"
             @change="handleSlideChange"
           />
 
-          <div class="rounded-[1.5rem] bg-fog p-4 sm:p-5">
-            <p
-              class="text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
-            >
-              Kod produktu
-            </p>
-            <p class="mt-2 text-lg font-semibold">{{ product.sku }}</p>
-            <p
-              class="mt-5 text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
-            >
-              Czas realizacji
-            </p>
-            <p class="mt-2 text-lg font-semibold">{{ product.leadTime }}</p>
+          <div
+            class="rounded-xl sm:rounded-[1.5rem] bg-fog p-3 sm:p-4 shrink-0"
+          >
+            <div class="flex flex-wrap gap-x-8 gap-y-2">
+              <div>
+                <p
+                  class="text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
+                >
+                  Kod produktu
+                </p>
+                <p class="mt-1 text-sm sm:text-base font-semibold">
+                  {{ product.sku }}
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
+                >
+                  Czas realizacji
+                </p>
+                <p class="mt-1 text-sm sm:text-base font-semibold">
+                  {{ product.leadTime }}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
