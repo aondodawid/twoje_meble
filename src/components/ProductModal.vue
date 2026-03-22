@@ -8,7 +8,7 @@
       <section
         v-if="visible && product"
         ref="dialog"
-        class="panel-surface relative max-h-[90vh] sm:max-h-[92vh] w-full max-w-2xl overflow-auto p-3 sm:p-4 md:p-6"
+        class="panel-surface relative max-h-[92vh] sm:max-h-[92vh] w-full max-w-2xl overflow-auto p-4 sm:p-4 md:p-6"
         role="dialog"
         aria-modal="true"
         :aria-labelledby="titleId"
@@ -33,8 +33,8 @@
           </svg>
         </button>
 
-        <div class="space-y-4 sm:space-y-6">
-          <header class="space-y-2 sm:space-y-3">
+        <div class="space-y-5 sm:space-y-6">
+          <header class="space-y-3 sm:space-y-3">
             <p
               class="text-sm font-semibold uppercase tracking-[0.28em] text-bark/85"
             >
@@ -57,7 +57,7 @@
             @change="handleSlideChange"
           />
 
-          <div class="rounded-[1.5rem] bg-fog p-3 sm:p-5">
+          <div class="rounded-[1.5rem] bg-fog p-4 sm:p-5">
             <p
               class="text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
             >
