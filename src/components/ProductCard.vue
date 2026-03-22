@@ -86,7 +86,8 @@ export default {
         return undefined;
       }
       const src600 = src.replace(/\.webp$/, "-600w.webp");
-      return `${src600} 600w, ${src} 900w`;
+      const src750 = src.replace(/\.webp$/, "-750w.webp");
+      return `${src600} 600w, ${src750} 750w, ${src} 900w`;
     },
     triggerId() {
       return `product-trigger-${this.product.id}`;
