@@ -6,24 +6,24 @@
       @touchend="handleTouchEnd"
     >
       <img
-        class="w-full aspect-[4/3] object-cover select-none"
+        class="w-full aspect-[4/3] max-h-[35vh] sm:max-h-[42vh] object-cover select-none"
         :src="currentImage.src"
         :alt="currentImage.alt"
         loading="eager"
       />
 
       <div
-        class="absolute inset-0 flex items-center justify-between px-3 sm:px-4 pointer-events-none"
+        class="absolute inset-0 flex items-center justify-between px-3 pointer-events-none sm:px-4"
       >
         <button
           type="button"
-          class="pointer-events-auto flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 transition-all duration-200 rounded-full opacity-70 hover:enabled:opacity-100 disabled:opacity-30 disabled:cursor-not-allowed bg-bark/40 hover:enabled:bg-bark/50 backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2"
+          class="flex items-center justify-center w-12 h-12 transition-all duration-200 rounded-full pointer-events-auto sm:w-14 sm:h-14 opacity-70 hover:enabled:opacity-100 disabled:opacity-30 disabled:cursor-not-allowed bg-bark/40 hover:enabled:bg-bark/50 backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2"
           :disabled="activeIndex === 0"
           aria-label="Poprzednie zdjęcie"
           @click="$emit('change', activeIndex - 1)"
         >
           <svg
-            class="w-6 h-6 sm:w-7 sm:h-7 stroke-current text-white font-bold"
+            class="w-6 h-6 font-bold text-white stroke-current sm:w-7 sm:h-7"
             fill="none"
             stroke-width="3"
             stroke-linecap="round"
@@ -36,13 +36,13 @@
 
         <button
           type="button"
-          class="pointer-events-auto flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 transition-all duration-200 rounded-full opacity-70 hover:enabled:opacity-100 disabled:opacity-30 disabled:cursor-not-allowed bg-bark/40 hover:enabled:bg-bark/50 backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2"
+          class="flex items-center justify-center w-12 h-12 transition-all duration-200 rounded-full pointer-events-auto sm:w-14 sm:h-14 opacity-70 hover:enabled:opacity-100 disabled:opacity-30 disabled:cursor-not-allowed bg-bark/40 hover:enabled:bg-bark/50 backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2"
           :disabled="activeIndex === images.length - 1"
           aria-label="Następne zdjęcie"
           @click="$emit('change', activeIndex + 1)"
         >
           <svg
-            class="w-6 h-6 sm:w-7 sm:h-7 stroke-current text-white font-bold"
+            class="w-6 h-6 font-bold text-white stroke-current sm:w-7 sm:h-7"
             fill="none"
             stroke-width="3"
             stroke-linecap="round"
@@ -59,7 +59,7 @@
       <li v-for="(image, index) in images" :key="`${image.src}-${index}`">
         <button
           type="button"
-          class="w-full overflow-hidden rounded-2xl border-2 transition"
+          class="w-full overflow-hidden transition border-2 rounded-2xl"
           :class="
             index === activeIndex
               ? 'border-clay'
@@ -69,7 +69,7 @@
           @click="$emit('change', index)"
         >
           <img
-            class="w-full aspect-[4/3] object-cover"
+            class="object-cover w-full aspect-square"
             :src="image.src"
             :alt="image.alt"
             loading="lazy"
