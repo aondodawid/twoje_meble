@@ -1,73 +1,77 @@
 <template>
-  <div
-    v-if="visible && product"
-    class="fixed inset-0 z-50 flex items-center justify-center p-3 bg-bark/75 sm:p-6"
-    @click.self="emitClose"
-  >
-    <section
-      ref="dialog"
-      class="panel-surface relative max-h-[92vh] w-full max-w-5xl overflow-auto p-4 sm:p-6"
-      role="dialog"
-      aria-modal="true"
-      :aria-labelledby="titleId"
-      @keydown="handleKeydown"
+  <transition name="modal">
+    <div
+      v-if="visible && product"
+      class="fixed inset-0 z-50 flex items-center justify-center p-3 bg-bark/75 sm:p-6"
+      @click.self="emitClose"
     >
-      <button
-        ref="closeButton"
-        type="button"
-        class="absolute flex items-center justify-center w-10 h-10 transition-colors duration-200 rounded-full right-4 top-4 bg-bark/10 hover:bg-bark/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2"
-        aria-label="Zamknij szczegóły produktu"
-        @click="emitClose"
+      <section
+        ref="dialog"
+        class="panel-surface relative max-h-[92vh] w-full max-w-5xl overflow-auto p-4 sm:p-6"
+        role="dialog"
+        aria-modal="true"
+        :aria-labelledby="titleId"
+        @keydown="handleKeydown"
       >
-        <svg
-          class="w-6 h-6 stroke-current text-bark"
-          fill="none"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          viewBox="0 0 24 24"
+        <button
+          ref="closeButton"
+          type="button"
+          class="absolute flex items-center justify-center w-10 h-10 transition-colors duration-200 rounded-full right-4 top-4 bg-bark/10 hover:bg-bark/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2"
+          aria-label="Zamknij szczegóły produktu"
+          @click="emitClose"
         >
-          <path d="M18 6L6 18M6 6l12 12" />
-        </svg>
-      </button>
-
-      <div class="space-y-6">
-        <header class="space-y-3">
-          <p
-            class="text-sm font-semibold uppercase tracking-[0.28em] text-bark/85"
+          <svg
+            class="w-6 h-6 stroke-current text-bark"
+            fill="none"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
           >
-            Szczegóły produktu
-          </p>
-          <h2
-            :id="titleId"
-            class="text-3xl font-black leading-tight sm:text-4xl"
-          >
-            {{ product.name }}
-          </h2>
-          <p class="text-2xl font-black text-clay">{{ product.price }}</p>
-        </header>
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
 
-        <ProductSlider
-          :images="product.galleryImages"
-          :active-index="activeSlideIndex"
-          @change="handleSlideChange"
-        />
+        <div class="space-y-6">
+          <header class="space-y-3">
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.28em] text-bark/85"
+            >
+              Szczegóły produktu
+            </p>
+            <h2
+              :id="titleId"
+              class="text-3xl font-black leading-tight sm:text-4xl"
+            >
+              {{ product.name }}
+            </h2>
+            <p class="text-2xl font-black text-clay">{{ product.price }}</p>
+          </header>
 
-        <div class="rounded-[1.5rem] bg-fog p-5">
-          <p class="text-xs font-bold uppercase tracking-[0.22em] text-bark/80">
-            Kod produktu
-          </p>
-          <p class="mt-2 text-lg font-semibold">{{ product.sku }}</p>
-          <p
-            class="mt-5 text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
-          >
-            Czas realizacji
-          </p>
-          <p class="mt-2 text-lg font-semibold">{{ product.leadTime }}</p>
+          <ProductSlider
+            :images="product.galleryImages"
+            :active-index="activeSlideIndex"
+            @change="handleSlideChange"
+          />
+
+          <div class="rounded-[1.5rem] bg-fog p-5">
+            <p
+              class="text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
+            >
+              Kod produktu
+            </p>
+            <p class="mt-2 text-lg font-semibold">{{ product.sku }}</p>
+            <p
+              class="mt-5 text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
+            >
+              Czas realizacji
+            </p>
+            <p class="mt-2 text-lg font-semibold">{{ product.leadTime }}</p>
+          </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -168,3 +172,30 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Modal transition - performant with GPU acceleration */
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-enter,
+.modal-leave-to {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.modal-enter-to,
+.modal-leave {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Ensure no layout thrashing with will-change */
+.modal-enter-active > div,
+.modal-leave-active > div {
+  will-change: transform, opacity;
+}
+</style>
