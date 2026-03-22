@@ -6,24 +6,24 @@
     "sku": "TM-SOF-001",
     "leadTime": "Dostawa w 5 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/products/modena2.webp",
+      "src": "/assets/images/products/modena/modena2.webp",
       "alt": "Sofa Modena w jasnym salonie"
     },
     "hoverImage": {
-      "src": "/assets/images/products/modena1.webp",
+      "src": "/assets/images/products/modena/modena1.webp",
       "alt": "Sofa Modena z widocznym bokiem i detalem tapicerki"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/products/modena1.webp",
+        "src": "/assets/images/products/modena/modena1.webp",
         "alt": "Sofa Modena z lampą i stolikiem pomocniczym"
       },
       {
-        "src": "/assets/images/products/modena3.webp",
+        "src": "/assets/images/products/modena/modena3.webp",
         "alt": "Sofa Modena w ujęciu z lewej strony"
       },
       {
-        "src": "/assets/images/products/modena2.webp",
+        "src": "/assets/images/products/modena/modena2.webp",
         "alt": "Sofa Modena w aranżacji dziennej"
       }
     ]
@@ -35,24 +35,24 @@
     "sku": "TM-SOF-002",
     "leadTime": "Dostawa w 7 dni roboczych",
     "primaryImage": {
-      "src": "/assets/images/products/sora2.webp",
+      "src": "/assets/images/products/sora/sora2.webp",
       "alt": "Narożnik Sora w ciepłym wnętrzu"
     },
     "hoverImage": {
-      "src": "/assets/images/products/sora1.webp",
+      "src": "/assets/images/products/sora/sora1.webp",
       "alt": "Narożnik Sora pokazany z szerszej perspektywy"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/products/sora1.webp",
+        "src": "/assets/images/products/sora/sora1.webp",
         "alt": "Narożnik Sora z widokiem na siedzisko"
       },
       {
-        "src": "/assets/images/products/sora3.webp",
+        "src": "/assets/images/products/sora/sora3.webp",
         "alt": "Narożnik Sora z dekoracyjną lampą"
       },
       {
-        "src": "/assets/images/products/sora2.webp",
+        "src": "/assets/images/products/sora/sora2.webp",
         "alt": "Narożnik Sora w układzie otwartym"
       }
     ]
@@ -64,24 +64,24 @@
     "sku": "TM-CHA-001",
     "leadTime": "Wysyłka w 48 godzin",
     "primaryImage": {
-      "src": "/assets/images/products/lino1.webp",
+      "src": "/assets/images/products/lino/lino1.webp",
       "alt": "Fotel Lino przy stoliku bocznym"
     },
     "hoverImage": {
-      "src": "/assets/images/products/lino2.webp",
+      "src": "/assets/images/products/lino/lino2.webp",
       "alt": "Fotel Lino w jasnej aranżacji"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/products/lino2.webp",
+        "src": "/assets/images/products/lino/lino2.webp",
         "alt": "Fotel Lino obok szerokiej sofy"
       },
       {
-        "src": "/assets/images/products/lino3.webp",
+        "src": "/assets/images/products/lino/lino3.webp",
         "alt": "Fotel Lino na tle pionowego panelu"
       },
       {
-        "src": "/assets/images/products/lino1.webp",
+        "src": "/assets/images/products/lino/lino1.webp",
         "alt": "Fotel Lino w widoku frontowym"
       }
     ]
@@ -93,24 +93,24 @@
     "sku": "TM-TAB-001",
     "leadTime": "Dostawa w 4 dni robocze",
     "primaryImage": {
-      "src": "/assets/images/products/riva1.webp",
+      "src": "/assets/images/products/riva/riva1.webp",
       "alt": "Ława Riva w aranżacji przy witrynie"
     },
     "hoverImage": {
-      "src": "/assets/images/products/riva2.webp",
+      "src": "/assets/images/products/riva/riva2.webp",
       "alt": "Ława Riva w zestawie z bufetem"
     },
     "galleryImages": [
       {
-        "src": "/assets/images/products/riva2.webp",
+        "src": "/assets/images/products/riva/riva2.webp",
         "alt": "Ława Riva na tle ciepłej jadalni"
       },
       {
-        "src": "/assets/images/products/riva3.webp",
+        "src": "/assets/images/products/riva/riva3.webp",
         "alt": "Ława Riva obok sofy w salonie"
       },
       {
-        "src": "/assets/images/products/riva1.webp",
+        "src": "/assets/images/products/riva/riva1.webp",
         "alt": "Ława Riva w widoku z przodu"
       }
     ]
