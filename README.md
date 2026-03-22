@@ -82,6 +82,10 @@ npm run test:quality
 
 Celowy wybór — zadanie nie wymaga Composition API ani dodatkowych możliwości Vue 3. Vue 2.7 daje pełną stabilność i należy do stack w firmie.
 
+### Java Script zamiast Type Script
+
+Zastosowanie Type Script we Vue 2 bywa problematyczne. Na tym poziomie złożoności projektu nie jest konieczne
+
 ### Dane statyczne (JSON)
 
 Produkty ładowane z `/data/products.json` — zgodnie z wymaganiem „bez back-endu". Plik walidowany przy starcie przez `validateProducts.js` (kontrakt: 16 produktów, min. 3 zdjęcia w galerii, unikalne SKU).
