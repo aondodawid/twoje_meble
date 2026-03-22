@@ -1,36 +1,58 @@
 <template>
   <section class="space-y-4" aria-label="Galeria produktu">
-    <div class="overflow-hidden rounded-[1.5rem] bg-sand">
+    <div
+      class="relative overflow-hidden rounded-[1.5rem] bg-sand group cursor-grab active:cursor-grabbing"
+      @touchstart="handleTouchStart"
+      @touchend="handleTouchEnd"
+    >
       <img
-        class="h-64 w-full object-cover sm:h-72"
+        class="h-64 w-full object-cover sm:h-72 select-none"
         :src="currentImage.src"
         :alt="currentImage.alt"
         loading="eager"
       />
-    </div>
 
-    <div class="flex items-center justify-between gap-4">
-      <button
-        type="button"
-        class="secondary-button"
-        :disabled="activeIndex === 0"
-        aria-label="Poprzednie zdjęcie"
-        @click="$emit('change', activeIndex - 1)"
+      <div
+        class="absolute inset-0 flex items-center justify-between px-3 sm:px-4 pointer-events-none"
       >
-        Poprzednie
-      </button>
-      <p class="text-sm font-semibold text-bark/85">
-        Slajd {{ activeIndex + 1 }} z {{ images.length }}
-      </p>
-      <button
-        type="button"
-        class="secondary-button"
-        :disabled="activeIndex === images.length - 1"
-        aria-label="Następne zdjęcie"
-        @click="$emit('change', activeIndex + 1)"
-      >
-        Następne
-      </button>
+        <button
+          type="button"
+          class="pointer-events-auto flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 transition-all duration-200 rounded-full opacity-70 hover:enabled:opacity-100 disabled:opacity-30 disabled:cursor-not-allowed bg-bark/40 hover:enabled:bg-bark/50 backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2"
+          :disabled="activeIndex === 0"
+          aria-label="Poprzednie zdjęcie"
+          @click="$emit('change', activeIndex - 1)"
+        >
+          <svg
+            class="w-6 h-6 sm:w-7 sm:h-7 stroke-current text-white font-bold"
+            fill="none"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+          >
+            <path d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="pointer-events-auto flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 transition-all duration-200 rounded-full opacity-70 hover:enabled:opacity-100 disabled:opacity-30 disabled:cursor-not-allowed bg-bark/40 hover:enabled:bg-bark/50 backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2"
+          :disabled="activeIndex === images.length - 1"
+          aria-label="Następne zdjęcie"
+          @click="$emit('change', activeIndex + 1)"
+        >
+          <svg
+            class="w-6 h-6 sm:w-7 sm:h-7 stroke-current text-white font-bold"
+            fill="none"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+          >
+            <path d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <ol class="grid grid-cols-3 gap-3 sm:grid-cols-5">
@@ -71,9 +93,43 @@ export default {
       default: 0,
     },
   },
+  data() {
+    return {
+      touchStartX: 0,
+      touchStartY: 0,
+    };
+  },
   computed: {
     currentImage() {
       return this.images[this.activeIndex] || this.images[0];
+    },
+  },
+  methods: {
+    handleTouchStart(event) {
+      this.touchStartX = event.touches[0].clientX;
+      this.touchStartY = event.touches[0].clientY;
+    },
+    handleTouchEnd(event) {
+      const touchEndX = event.changedTouches[0].clientX;
+      const touchEndY = event.changedTouches[0].clientY;
+
+      const diffX = this.touchStartX - touchEndX;
+      const diffY = this.touchStartY - touchEndY;
+
+      // Tylko jeśli ruch był głównie horizontalny
+      if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+        if (diffX > 0) {
+          // Swipe w lewo - następne zdjęcie
+          if (this.activeIndex < this.images.length - 1) {
+            this.$emit("change", this.activeIndex + 1);
+          }
+        } else {
+          // Swipe w prawo - poprzednie zdjęcie
+          if (this.activeIndex > 0) {
+            this.$emit("change", this.activeIndex - 1);
+          }
+        }
+      }
     },
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="visible && product"
-    class="fixed inset-0 z-50 flex items-end justify-center bg-bark/75 p-3 sm:p-6 md:items-center"
+    class="fixed inset-0 z-50 flex items-center justify-center p-3 bg-bark/75 sm:p-6"
     @click.self="emitClose"
   >
     <section
@@ -15,66 +15,55 @@
       <button
         ref="closeButton"
         type="button"
-        class="secondary-button absolute right-4 top-4"
+        class="absolute flex items-center justify-center w-10 h-10 transition-colors duration-200 rounded-full right-4 top-4 bg-bark/10 hover:bg-bark/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay focus-visible:ring-offset-2"
         aria-label="Zamknij szczegóły produktu"
         @click="emitClose"
       >
-        Zamknij
+        <svg
+          class="w-6 h-6 stroke-current text-bark"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
       </button>
 
-      <div
-        class="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start"
-      >
-        <div class="space-y-4">
-          <div class="overflow-hidden rounded-[1.75rem] bg-sand">
-            <img
-              class="h-72 w-full object-cover sm:h-80"
-              :src="product.primaryImage.src"
-              :alt="product.primaryImage.alt"
-              loading="eager"
-            />
-          </div>
-          <div class="rounded-[1.5rem] bg-fog p-5">
-            <p
-              class="text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
-            >
-              Kod produktu
-            </p>
-            <p class="mt-2 text-lg font-semibold">{{ product.sku }}</p>
-            <p
-              class="mt-5 text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
-            >
-              Czas realizacji
-            </p>
-            <p class="mt-2 text-lg font-semibold">{{ product.leadTime }}</p>
-          </div>
-        </div>
+      <div class="space-y-6">
+        <header class="space-y-3">
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.28em] text-bark/85"
+          >
+            Szczegóły produktu
+          </p>
+          <h2
+            :id="titleId"
+            class="text-3xl font-black leading-tight sm:text-4xl"
+          >
+            {{ product.name }}
+          </h2>
+          <p class="text-2xl font-black text-clay">{{ product.price }}</p>
+        </header>
 
-        <div class="space-y-6">
-          <header class="space-y-3 pr-12">
-            <p
-              class="text-sm font-semibold uppercase tracking-[0.28em] text-bark/85"
-            >
-              Szczegóły produktu
-            </p>
-            <h2
-              :id="titleId"
-              class="text-3xl font-black leading-tight sm:text-4xl"
-            >
-              {{ product.name }}
-            </h2>
-            <p class="text-2xl font-black text-clay">{{ product.price }}</p>
-            <p class="max-w-2xl text-base leading-7 text-bark/90">
-              Zobacz pełną galerię zdjęć, sprawdź kod produktu i zaplanuj termin
-              dostawy bez opuszczania katalogu.
-            </p>
-          </header>
+        <ProductSlider
+          :images="product.galleryImages"
+          :active-index="activeSlideIndex"
+          @change="handleSlideChange"
+        />
 
-          <ProductSlider
-            :images="product.galleryImages"
-            :active-index="activeSlideIndex"
-            @change="handleSlideChange"
-          />
+        <div class="rounded-[1.5rem] bg-fog p-5">
+          <p class="text-xs font-bold uppercase tracking-[0.22em] text-bark/80">
+            Kod produktu
+          </p>
+          <p class="mt-2 text-lg font-semibold">{{ product.sku }}</p>
+          <p
+            class="mt-5 text-xs font-bold uppercase tracking-[0.22em] text-bark/80"
+          >
+            Czas realizacji
+          </p>
+          <p class="mt-2 text-lg font-semibold">{{ product.leadTime }}</p>
         </div>
       </div>
     </section>
