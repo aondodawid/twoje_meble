@@ -6,7 +6,6 @@ module.exports = {
         sand: "#f3ece2",
         clay: "#c86f3d",
         bark: "#3c2d27",
-        moss: "#617a55",
         fog: "#f8f7f4",
       },
       boxShadow: {

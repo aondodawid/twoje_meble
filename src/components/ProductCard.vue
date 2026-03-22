@@ -32,9 +32,6 @@
         <h2 class="text-xl font-bold leading-tight text-bark">
           {{ product.name }}
         </h2>
-        <!-- <p class="text-sm uppercase tracking-[0.25em] text-bark/80">
-          {{ product.sku }}
-        </p> -->
         <p class="text-2xl font-black text-bark">{{ product.price }}</p>
       </div>
     </div>

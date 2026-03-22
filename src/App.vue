@@ -1,6 +1,6 @@
 <template>
   <div
-    class="app-shell min-h-[100dvh] bg-[radial-gradient(circle_at_top,_rgba(200,111,61,0.18),_transparent_42%),linear-gradient(180deg,_#f8f7f4_0%,_#efe6d9_100%)] text-bark"
+    class="app-shell bg-[radial-gradient(circle_at_top,_rgba(200,111,61,0.18),_transparent_42%),linear-gradient(180deg,_#f8f7f4_0%,_#efe6d9_100%)] text-bark"
   >
     <header class="border-b border-bark/10 bg-white">
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">

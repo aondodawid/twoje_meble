@@ -26,7 +26,7 @@
           @click="$emit('change', activeIndex - 1)"
         >
           <svg
-            class="w-6 h-6 font-bold text-white stroke-current sm:w-7 sm:h-7"
+            class="w-6 h-6 text-white stroke-current sm:w-7 sm:h-7"
             fill="none"
             stroke-width="3"
             stroke-linecap="round"
@@ -45,7 +45,7 @@
           @click="$emit('change', activeIndex + 1)"
         >
           <svg
-            class="w-6 h-6 font-bold text-white stroke-current sm:w-7 sm:h-7"
+            class="w-6 h-6 text-white stroke-current sm:w-7 sm:h-7"
             fill="none"
             stroke-width="3"
             stroke-linecap="round"
