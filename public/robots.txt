@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://twojemeble.pl/sitemap.xml
+Sitemap: https://your-domain.com/sitemap.xml

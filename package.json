@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "serve:audit": "node scripts/run-serve.js",
     "serve:prod": "npm run build && node scripts/serve-dist.js",
+    "prebuild": "node scripts/generate-seo-files.js",
     "build": "vue-cli-service build",
     "test:unit": "jest --runInBand",
     "test:e2e": "playwright test tests/e2e --project=chromium",
