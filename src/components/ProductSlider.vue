@@ -6,7 +6,7 @@
       @touchend="handleTouchEnd"
     >
       <img
-        class="h-64 w-full object-cover sm:h-72 select-none"
+        class="h-36 sm:h-56 md:h-72 w-full object-cover select-none"
         :src="currentImage.src"
         :alt="currentImage.alt"
         loading="eager"
@@ -69,7 +69,7 @@
           @click="$emit('change', index)"
         >
           <img
-            class="h-20 w-full object-cover"
+            class="h-16 sm:h-20 w-full object-cover"
             :src="image.src"
             :alt="image.alt"
             loading="lazy"
