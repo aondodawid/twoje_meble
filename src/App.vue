@@ -9,22 +9,14 @@
         >
           Twoje Meble
         </p>
-        <div
-          class="mt-3 flex flex-col gap-3 md:flex-row md:items-end md:justify-between"
-        >
-          <div>
-            <h1
-              class="text-4xl font-black tracking-tight text-bark sm:text-5xl"
-            >
-              Kolekcja do salonu i jadalni
-            </h1>
-            <p
-              class="mt-3 max-w-2xl text-base leading-7 text-bark/90 sm:text-lg"
-            >
-              Przeglądaj wybrane modele, porównuj wykończenia i otwieraj
-              szczegóły bez opuszczania listy produktów.
-            </p>
-          </div>
+        <div class="mt-3">
+          <h1 class="text-4xl font-black tracking-tight text-bark sm:text-5xl">
+            Kolekcja do salonu i jadalni
+          </h1>
+          <p class="mt-3 max-w-2xl text-base leading-7 text-bark/90 sm:text-lg">
+            Przeglądaj wybrane modele, porównuj wykończenia i otwieraj szczegóły
+            bez opuszczania listy produktów.
+          </p>
         </div>
       </div>
     </header>

@@ -6,7 +6,6 @@
   >
     <transition name="modal">
       <section
-        v-if="visible && product"
         ref="dialog"
         class="panel-surface relative h-[94vh] sm:h-[92vh] md:h-[90vh] w-full max-w-2xl md:max-w-3xl overflow-hidden p-4 sm:p-5 md:p-6"
         role="dialog"
