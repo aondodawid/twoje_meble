@@ -1,6 +1,6 @@
 <template>
   <article
-    class="relative flex flex-col h-full overflow-hidden text-left cursor-pointer panel-surface product-card-focus"
+    class="relative flex flex-col h-full overflow-hidden text-left cursor-pointer panel-surface focus-within:ring-4 focus-within:ring-clay/55 focus-within:ring-offset-4 focus-within:ring-offset-fog"
     @mouseenter="setHovered(true)"
     @mouseleave="setHovered(false)"
   >
