@@ -1,6 +1,6 @@
 <template>
   <article
-    class="panel-surface relative flex h-full cursor-pointer flex-col overflow-hidden text-left focus-within:ring-4 focus-within:ring-clay/55 focus-within:ring-offset-4 focus-within:ring-offset-fog"
+    class="relative flex flex-col h-full overflow-hidden text-left cursor-pointer panel-surface focus-within:ring-4 focus-within:ring-clay/55 focus-within:ring-offset-4 focus-within:ring-offset-fog"
     @mouseenter="setHovered(true)"
     @mouseleave="setHovered(false)"
   >
@@ -16,7 +16,7 @@
 
     <div class="relative aspect-[4/3] overflow-hidden bg-sand">
       <img
-        class="h-full w-full object-cover transition duration-300 ease-out"
+        class="object-cover w-full h-full transition duration-300 ease-out"
         :src="displayImage.src"
         :alt="displayImage.alt"
         :loading="imageLoading"
@@ -25,7 +25,7 @@
       />
     </div>
 
-    <div class="flex flex-1 flex-col gap-4 p-5">
+    <div class="flex flex-col flex-1 gap-4 p-5">
       <div class="space-y-2">
         <h2 class="text-xl font-bold leading-tight text-bark">
           {{ product.name }}
@@ -35,10 +35,6 @@
         </p>
         <p class="text-2xl font-black text-bark">{{ product.price }}</p>
       </div>
-
-      <p class="mt-auto text-sm font-medium text-bark/90">
-        {{ product.leadTime }}
-      </p>
     </div>
   </article>
 </template>
