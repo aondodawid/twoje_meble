@@ -1,11 +1,12 @@
 <template>
-  <transition name="modal">
-    <div
-      v-if="visible && product"
-      class="fixed inset-0 z-50 flex items-center justify-center p-3 bg-bark/75 sm:p-6"
-      @click.self="emitClose"
-    >
+  <div
+    v-if="visible && product"
+    class="fixed inset-0 z-50 flex items-center justify-center p-3 bg-bark/75 sm:p-6"
+    @click.self="emitClose"
+  >
+    <transition name="modal">
       <section
+        v-if="visible && product"
         ref="dialog"
         class="panel-surface relative max-h-[92vh] w-full max-w-5xl overflow-auto p-4 sm:p-6"
         role="dialog"
@@ -70,8 +71,8 @@
           </div>
         </div>
       </section>
-    </div>
-  </transition>
+    </transition>
+  </div>
 </template>
 
 <script>
@@ -179,6 +180,7 @@ export default {
 .modal-leave-active {
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
 }
 
 .modal-enter,
@@ -191,11 +193,5 @@ export default {
 .modal-leave {
   opacity: 1;
   transform: scale(1);
-}
-
-/* Ensure no layout thrashing with will-change */
-.modal-enter-active > div,
-.modal-leave-active > div {
-  will-change: transform, opacity;
 }
 </style>
