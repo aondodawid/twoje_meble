@@ -7,7 +7,7 @@
     <transition name="modal">
       <section
         ref="dialog"
-        class="panel-surface relative h-[94vh] sm:h-[92vh] md:h-[90vh] w-full max-w-2xl md:max-w-3xl overflow-hidden p-4 sm:p-5 md:p-6"
+        class="panel-surface modal-sheet relative w-full max-w-2xl md:max-w-3xl overflow-hidden p-4 sm:p-5 md:p-6"
         role="dialog"
         aria-modal="true"
         :aria-labelledby="titleId"
@@ -216,5 +216,26 @@ export default {
 .modal-leave {
   opacity: 1;
   transform: scale(1);
+}
+
+/* dvh = dynamic viewport height: adjusts when mobile browser chrome shows/hides.
+   Two declarations = progressive enhancement; browsers without dvh fall back to vh. */
+.modal-sheet {
+  height: 82vh;
+  height: 82dvh;
+}
+
+@media (min-width: 640px) {
+  .modal-sheet {
+    height: 88vh;
+    height: 88dvh;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-sheet {
+    height: 90vh;
+    height: 90dvh;
+  }
 }
 </style>
