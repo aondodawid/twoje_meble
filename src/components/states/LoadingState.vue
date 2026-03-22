@@ -1,6 +1,8 @@
 <template>
   <div
     class="panel-surface flex min-h-[14rem] flex-col items-center justify-center gap-4 px-6 py-10 text-center"
+    role="status"
+    aria-live="polite"
   >
     <div
       class="h-12 w-12 animate-spin rounded-full border-4 border-clay/25 border-t-clay"

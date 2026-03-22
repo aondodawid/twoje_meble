@@ -10,7 +10,7 @@
       "alt": "Sofa Modena w jasnym salonie"
     },
     "hoverImage": {
-      "src": "/assets/images/modena3.webp",
+      "src": "/assets/images/modena1.webp",
       "alt": "Sofa Modena z widocznym bokiem i detalem tapicerki"
     },
     "galleryImages": [
@@ -23,7 +23,7 @@
         "alt": "Sofa Modena w ujęciu z lewej strony"
       },
       {
-        "src": "/assets/images/modena2.webp",
+        "src": "/assets/images/modena1.webp",
         "alt": "Sofa Modena z lampą i stolikiem pomocniczym"
       }
     ]
@@ -39,7 +39,7 @@
       "alt": "Narożnik Sora w ciepłym wnętrzu"
     },
     "hoverImage": {
-      "src": "/assets/images/sora3.webp",
+      "src": "/assets/images/sora1.webp",
       "alt": "Narożnik Sora pokazany z szerszej perspektywy"
     },
     "galleryImages": [
@@ -52,7 +52,7 @@
         "alt": "Narożnik Sora z dekoracyjną lampą"
       },
       {
-        "src": "/assets/images/sora2.webp",
+        "src": "/assets/images/sora1.webp",
         "alt": "Narożnik Sora z widokiem na siedzisko"
       }
     ]
@@ -81,7 +81,7 @@
         "alt": "Fotel Lino obok szerokiej sofy"
       },
       {
-        "src": "/assets/images/lino2.webp",
+        "src": "/assets/images/lino3.webp",
         "alt": "Fotel Lino na tle pionowego panelu"
       }
     ]
@@ -110,7 +110,7 @@
         "alt": "Ława Riva na tle ciepłej jadalni"
       },
       {
-        "src": "/assets/images/riva1.webp",
+        "src": "/assets/images/riva3.webp",
         "alt": "Ława Riva obok sofy w salonie"
       }
     ]

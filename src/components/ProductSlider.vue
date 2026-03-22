@@ -58,6 +58,10 @@
       </div>
     </div>
 
+    <p class="sr-only" aria-live="polite" aria-atomic="true">
+      Slajd {{ activeIndex + 1 }} z {{ images.length }}
+    </p>
+
     <ol class="grid grid-cols-3 gap-2 sm:gap-3 shrink-0">
       <li v-for="(image, index) in images" :key="`${image.src}-${index}`">
         <button

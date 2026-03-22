@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+  <section class="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-12">
     <LoadingState v-if="status === 'loading'" />
     <ErrorState v-else-if="status === 'error'" @retry="loadCatalog" />
     <ProductGrid
@@ -98,7 +98,8 @@ export default {
       this.$nextTick(() => {
         if (
           lastTriggerElement &&
-          typeof lastTriggerElement.focus === "function"
+          typeof lastTriggerElement.focus === "function" &&
+          document.body.contains(lastTriggerElement)
         ) {
           lastTriggerElement.focus();
         }

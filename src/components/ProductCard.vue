@@ -24,6 +24,7 @@
         :loading="imageLoading"
         :decoding="imageDecoding"
         :fetchpriority="imageFetchPriority"
+        @error="handleImageError"
       />
     </div>
 
@@ -100,6 +101,11 @@ export default {
       }
 
       this.isHovered = value;
+    },
+    handleImageError() {
+      if (this.isHovered) {
+        this.isHovered = false;
+      }
     },
   },
 };

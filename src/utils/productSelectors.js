@@ -1,12 +1,7 @@
 export const CATALOG_URL = "/data/products.json";
 
 export function resolveCatalogUrl() {
-  if (typeof window === "undefined") {
-    return CATALOG_URL;
-  }
-
-  const query = new URLSearchParams(window.location.search);
-  return query.get("catalog") || CATALOG_URL;
+  return CATALOG_URL;
 }
 
 export function selectProductById(products, productId) {

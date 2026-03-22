@@ -119,9 +119,15 @@ export default {
         : "product-title";
     },
   },
+  data() {
+    return {
+      savedOverflow: null,
+    };
+  },
   watch: {
     visible(value) {
       if (value) {
+        this.savedOverflow = document.body.style.overflow;
         document.body.style.overflow = "hidden";
         this.$nextTick(() => {
           if (this.$refs.closeButton) {
@@ -129,12 +135,15 @@ export default {
           }
         });
       } else {
-        document.body.style.overflow = "";
+        document.body.style.overflow = this.savedOverflow || "";
+        this.savedOverflow = null;
       }
     },
   },
   beforeDestroy() {
-    document.body.style.overflow = "";
+    if (this.savedOverflow !== null) {
+      document.body.style.overflow = this.savedOverflow;
+    }
   },
   methods: {
     emitClose() {
