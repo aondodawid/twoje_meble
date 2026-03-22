@@ -123,14 +123,6 @@ Jest to celowe — w rzeczywistym projekcie zdjęcia pochodzą z backendowego CM
 - ✅ Działanie hover preview na WebP
 - ✅ Responsywną galerię w modalu
 
-**Aby zastąpić SVG prawdziwymi zdjęciami:**
-
-1. Pobierz darmowe zdjęcia mebli z [Unsplash](https://unsplash.com/s/photos/furniture) lub [Pexels](https://www.pexels.com/search/furniture/)
-2. Konwertuj na WebP: `cwebp input.jpg -o output.webp`
-3. Wygeneruj warianty: `cwebp input.webp -resize 750 0 -o input-750w.webp`
-4. Zaktualizuj `public/data/products.json`
-
-Struktura danych jest gotowa — zmiana obrazów to tylko edycja ścieżek w JSON.
 
 ---
 
